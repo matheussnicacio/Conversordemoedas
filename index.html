@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <title>Conversor de Moedas</title>
+</head>
+
+<body>
+    <div class="container mt-5 position-relative btn-lg">
+        <h1 class="text-center">Conversor de Moedas</h1>
+        <div class="converter text-center">
+            <input type="number" class="btn-lg" id="amount" placeholder="Digite o valor">
+            <select id="fromCurrency" class="btn-lg" >
+                <option value="USD">Dólar Americano (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="BR">Real (Brasil)</option>
+                <option value="GBP">Libra Esterlina (GBP)</option>
+                <option value="JPY">Iene Japonês (JPY)</option>
+                <option value="CAD">Dólar Canadense (CAD)</option>
+
+                <!-- Adicione mais moedas aqui -->
+            </select>
+            <span>para</span>
+            <select id="toCurrency" class="btn-lg">
+                <option value="EUR">Euro (EUR)</option>
+                <option value="USD">Dólar Americano (USD)</option>
+                <option value="BR">Real (Brasil)</option>
+                <option value="GBP">Libra Esterlina (GBP)</option>
+                <option value="JPY">Iene Japonês (JPY)</option>
+                <option value="CAD">Dólar Canadense (CAD)</option>
+
+                <!-- Adicione mais moedas aqui -->
+            </select>
+            <div>
+            <button id="convert" class="btn-lg btn-block mt-2 btn-dark" onclick="calcular()">Converter</button>
+        </div>
+        </div>
+        <div class="result text-center mt-2">
+            <h3>Resultado:</h3  >
+            <h1 id="resultText"></h1>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
